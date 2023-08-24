@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/key.png" type="image/x-icon">
+    <title>password generator/validator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="maindiv pt-5">
+<!-- password generator start -->
+    <div class="container w-50 h-auto" id="passgcontainer">
+        
+        <div class="heading"><h1>password generator</h1></div><!-- pass generator heading txt -->
+            
+        <div class="passgbody w-100 p-0">               
+                <input type="text"class="form-control password   " id="exampleFormControlInput1" placeholder="password"><!-- pass generator input field -->
+        </div>
+
+        <div class="btn0  border-0 ">
+                <button class="btn1" id="btnGenerate"   onclick="genPassword()">Gener</button><!-- pass gen btn1 [generate btn] -->
+                <button class="btn1" id="btnCopy"onclick="copypassword()">Copy</button><!-- pass gen btn2 [copy btn] -->
+        </div>
+
+    </div >
+<!-- password generator end -->
+
+    <div class="hr" style="display: flex; justify-content: center;"><hr color="black" width="85%" ></div>
+
+<!-- form validation start -->
+
+<div class="container w-50 h-auto" id="passgcontainer">
+        
+    <div class="heading"><h1>validator</h1></div><!-- pass generator heading txt -->
+        
+    <div class="passgbody w-100 p-0">               
+            <input type="text"class="form-control username1   " id="exampleFormControlInput1" placeholder="username"><!-- pass generator input field -->
+            <input type="text"class="form-control pass1   " id="exampleFormControlInput1" placeholder="password"><!-- pass generator input field -->
+    </div>
+
+    <div class="btn0  border-0 ">
+            <button class="btn1" id="btnCopy"onclick="validate()">Validate</button><!-- pass gen btn2 [copy btn] -->
+    </div>
+
+</div >
+
+<!-- form validation over -->
+
+</div>
+
+<script src="script.js"></script></body></html>

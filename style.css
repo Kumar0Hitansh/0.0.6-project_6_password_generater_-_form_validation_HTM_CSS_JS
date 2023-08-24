@@ -1,0 +1,214 @@
+
+@font-face {
+    font-family: 'Nasalization Rg' ;
+    src: url(font/nasalization-rg.otf);
+}
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+::selection{
+    color: #CB475E;
+}
+body{
+    background-image: url(img/peak_background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Nasalization Rg'!important;
+}
+
+.maindiv{
+    
+    height: 100vh;
+
+}
+
+
+
+
+
+#passgcontainer{
+   
+
+    border-radius: 10px;
+    height: 600px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    width: 100%;
+    margin: 10px;
+    height: 30px;
+    text-align: justify;
+    color: white;
+    text-align: center;
+    text-transform:uppercase;
+    letter-spacing: 5px;
+    word-spacing: 30px
+    ;
+    animation: lights 5s 750ms linear infinite;
+}
+.heading:hover{
+    letter-spacing: 8px;
+
+}
+
+
+
+@keyframes lights {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+
+  .passgbody{
+      margin-top: 40px;
+
+  }
+
+
+.passgbody>input{
+    width: 100% ;
+    
+    margin-bottom: 10px;
+    height: 50px;
+border-radius: 5px;
+border: none;
+background-color: rgba(0, 0, 0, 0.536);
+color: wheat;
+text-align: center;
+box-shadow: none;
+color: white;
+font-weight: bold;
+letter-spacing: 10px;
+font-family: 'Nasalization Rg'!important;
+
+
+}
+.passgbody>input:focus{
+    color: white;
+    background-color: black;
+    box-shadow: none;
+    background-color: black;
+}
+.passgbody>input:hover{
+    transform: scale(0.97);
+    background-color: black;
+    /* color: #E24C61; */
+}
+
+
+.passgbody>input::placeholder{
+    color: #e24c602d;
+}
+
+.btn0{
+    box-shadow: none;
+    border: none;
+    width: 100%;
+}
+
+
+.btn1{
+    
+    width: 100%;
+    margin: 10px 0px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.536);
+    text-align: center;
+    font-weight: bold;
+    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: nasa;
+    font-family: 'Nasalization Rg'!important;
+    color: white;
+
+
+}
+.btn1:hover{
+    cursor: pointer;
+    transform: scale(0.97);
+    background-color: black;
+    color: white;
+
+    /* letter-spacing: 15px; */
+
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+
+
+
+
+@media (max-width:1440px) {
+    .maindiv{
+
+        width: 100% !important;
+    }
+    #passgcontainer{
+        width: 100% !important;
+    }
+    .heading{
+        margin-top: 50px;
+    }
+    .passgbody{
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .btn{
+        width: 100% !important;
+    }
+}
